@@ -43,3 +43,24 @@ def test_invalid_automation_percentage():
 
     assert response.status_code == 422
 
+def test_retrieve_business_case():
+
+    response = client.get("/business-cases/3")
+
+    assert response.status_code == 200
+
+    results = response.json()
+
+    assert results["id"] == 3
+    assert results["title"] == "Financial Reporting Automation"
+    assert results["annual_hours_saved"] == 288
+    assert results["first_year_net_benefit"] == 22000
+
+
+def test_missing_business_case():
+
+    response = client.get("/business-cases/999999")
+
+    assert response.status_code == 404
+
+    assert response.json()["detail"] == "Business case not found"

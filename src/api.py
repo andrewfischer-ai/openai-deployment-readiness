@@ -1,7 +1,8 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel, Field
 
 from src.financial_engine import calculate_business_case
+from src.database import get_business_case
 
 
 # Create the API application
@@ -39,3 +40,17 @@ def calculate(data: BusinessCaseInput):
     )
 
     return results
+
+# Retrieve a saved business case
+@app.get("/business-cases/{business_case_id}")
+def retrieve_business_case(business_case_id: int):
+
+    record = get_business_case(business_case_id)
+
+    if record is None:
+        raise HTTPException(
+            status_code=404,
+            detail="Business case not found"
+        )
+
+    return record
