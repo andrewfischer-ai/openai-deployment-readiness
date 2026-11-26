@@ -1,0 +1,36 @@
+CORPORATE AI INVESTMENT POLICY
+Version: 1.0
+Classification: Training Example
+
+SECTION 1 — PURPOSE
+
+This policy establishes the approval requirements
+for proposed AI investments.
+
+SECTION 2 — INVESTMENT THRESHOLDS
+
+AI investments below $25,000 require approval
+from the department manager.
+
+AI investments from $25,000 through $100,000
+require approval from the business unit director.
+
+AI investments exceeding $100,000 require
+executive investment committee approval.
+
+SECTION 3 — SECURITY REQUIREMENTS
+
+All AI projects must complete an information
+security review before production deployment.
+
+Projects involving sensitive customer information
+require additional data-handling approval.
+
+SECTION 4 — BUSINESS CASE REQUIREMENTS
+
+All proposed AI investments must document
+implementation costs, recurring operating costs,
+expected benefits, and principal risks.
+
+Projects exceeding $50,000 must include
+a documented return-on-investment analysis.

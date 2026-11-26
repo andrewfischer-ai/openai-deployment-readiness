@@ -9,3 +9,7 @@ __pycache__/
 *.db-journal
 *.db-wal
 *.db-shm
+
+
+# Local embedding cache
+cache/
